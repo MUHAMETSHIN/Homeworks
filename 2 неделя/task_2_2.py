@@ -1,3 +1,4 @@
+N = int(input())
 a = input().split()
 n = int(a[0])
 l = a[1]

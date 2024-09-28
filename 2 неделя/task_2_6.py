@@ -1,6 +1,7 @@
-L=[i for i in input()]
-res = ""
-for k in L:
-    if L.count(k) == 1:
-        res+=k
-print(" ".join(res))    
+a = [int(i) for i in input().split()]
+for k in range(len(a)):
+    for j in range(len(a)):
+        if k != j and a[k] == a[j]:
+               break
+    
+    print(a[k], end=' ')
