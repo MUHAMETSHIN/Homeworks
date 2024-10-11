@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+import numpy as np
+val1= np.random.normal(0, 10, 10)
+val2= np.random.normal(0, 10, 200)
+val3= np.random.normal(0, 10, 2000)
+val4= np.random.normal(0, 10, 5000)
+fig = plt.figure(figsize = (10,8))
+ax1 = fig.add_subplot(221)
+ax2 = fig.add_subplot(222)
+ax3 = fig.add_subplot(223)
+ax4 = fig.add_subplot(224)
+ax1.hist(val1,10)
+ax1.set_title('для 10')
+ax2.hist(val2,50)
+ax2.set_title('для 200')
+ax3.hist(val3,100)
+ax3.set_title('для 2000')
+ax4.hist(val4,100)
+ax4.set_title('для 5000')
+plt.show()
+#для выборки из 10 значения все совпадают, ведь чисел настолько мало что они все концентрируются далеко друг от друга
