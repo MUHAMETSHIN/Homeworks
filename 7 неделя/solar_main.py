@@ -6,6 +6,8 @@ from solar_physics import *
 from solar_read import *
 
 
+
+
 perform_execution = False
 """Флаг цикличности выполнения расчёта"""
 
@@ -142,9 +144,7 @@ def main():
     displayed_time = tkinter.StringVar()
     displayed_time.set(str(physical_time) + " seconds gone")
     time_label = tkinter.Label(frame, textvariable=displayed_time, width=30)
-    time_label_A = tkinter.Label(frame, textvariable= '5', width=30)
     time_label.pack(side=tkinter.RIGHT)
-    time_label_A.pack(side=tkinter.LEFT)
 
     root.mainloop()
     print('Modelling finished!')
